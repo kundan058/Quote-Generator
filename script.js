@@ -1,6 +1,6 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
-const apiUrl = "https://api.quotable.io/random";
+const apiUrl =  "https://cors-anywhere.herokuapp.com/https://api.quotable.io/random";
 
 async function getQuote(url) {
     try {
