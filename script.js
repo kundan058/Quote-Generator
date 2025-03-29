@@ -1,6 +1,6 @@
 const quote = document.getElementById("quote");
 const author = document.getElementById("author");
-const apiUrl = "https://api.quotable.io/random"; // Changed to HTTPS ✅
+const apiUrl = "http://api.quotable.io/random";
 
 async function getQuote(url) {
     try {
@@ -15,8 +15,3 @@ async function getQuote(url) {
 }
 
 getQuote(apiUrl); // Calling the function
-
-function shareStatus() {
-    const shareURL = "https://www.facebook.com/sharer/sharer.php?u=";
-    window.open(shareURL, "Share", "width=600,height=400");
-}
